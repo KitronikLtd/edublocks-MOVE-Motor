@@ -1,4 +1,4 @@
-<category name="MOVEMotor" colour="#02AD4D" iconclass="blocklyTreeIconCustom robot">
+<category name=":MOVE Motor" colour="#02AD4D" iconclass="blocklyTreeIconCustom robot">
 <label text="Kitronik :MOVE Motor" web-class="myLabelStyle"></label>
  <block type="import_move_motor"></block>
  <block type="move_motor_init"></block>
