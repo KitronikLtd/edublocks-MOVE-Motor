@@ -26,7 +26,7 @@ Blockly.Blocks['move_motor_init'] = {
 Blockly.Blocks['move_motor_speed'] = {
     init: function() {
       this.appendDummyInput()
-        .appendField(new Blockly.FieldSlider("255", "-255", "255", "1", "1", "Value"), 'slider');
+        .appendField(new Blockly.FieldSlider("255", "-255", "255", "1", "1", "Speed"), 'slider');
       this.setInputsInline(true);
       this.setOutput(true, null);
       this.setOutputShape(Blockly.OUTPUT_SHAPE_ROUND);
