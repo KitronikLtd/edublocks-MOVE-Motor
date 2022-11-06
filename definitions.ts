@@ -14,7 +14,7 @@ Blockly.Blocks['move_motor_init'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(new Blockly.FieldVariable("buggy"), "buggy")
-        .appendField(" = MoveMotor()");
+        .appendField(" = MOVEMotor()");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour("#02AD4D");
