@@ -60,7 +60,7 @@ Blockly.Blocks['move_motor_stop'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(new Blockly.FieldVariable("buggy"), "buggy")
-        .appendField(".stop motors()");
+        .appendField(".StopMotors()");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour("#02AD4D");
