@@ -23,15 +23,26 @@ Blockly.Blocks['move_motor_init'] = {
   }
 };
 
+Blockly.Blocks['move_motor_speed'] = {
+    init: function() {
+      this.appendDummyInput()
+        .appendField(new Blockly.FieldSlider("255", "-255", "255", "1", "1", "Value"), 'slider');
+      this.setInputsInline(true);
+      this.setOutput(true, null);
+      this.setOutputShape(Blockly.OUTPUT_SHAPE_ROUND);
+      this.setColour("#FFFFFF");
+      this.setTooltip("Sets the speed of the :MOVE's motors");
+      this.setHelpUrl("");
+    }
+};
+
 Blockly.Blocks['move_motor_direction'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(new Blockly.FieldVariable("buggy"), "buggy")
         .appendField(".")
-        .appendField(new Blockly.FieldDropdown([["left", "LeftMotor"], ["right", "RightMotor"]]), "motor_side")
-        .appendField(" motor(")
-        .appendField(new Blockly.FieldDropdown([["foward", "foward"], ["backward", "backward"]]), "motor_direction")
-        .appendField(",");
+        .appendField(new Blockly.FieldDropdown([["Left", "Left"], ["Right", "Right"]]), "motor_side")
+        .appendField("Motor(")
     this.appendValueInput("motor_speed")
         .setCheck(null);
     this.appendDummyInput()
@@ -40,7 +51,7 @@ Blockly.Blocks['move_motor_direction'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour("#02AD4D");
-  this.setTooltip("Drive the :MOVE's left motor");
+  this.setTooltip("Drive the :MOVE's motors");
   this.setHelpUrl("");
   }
 };
