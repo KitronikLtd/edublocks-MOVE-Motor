@@ -21,7 +21,22 @@
   <block type="move_motor_set_led">
     <value name="parameters">
       <shadow type="parameters">
-          <mutation color="#10b981" items="3" limit="3" minimum="1" inputType="number" />
+        <mutation color="#10b981" items="3" limit="3" minimum="1" inputType="number"/>
+        <value name="value_1">
+          <shadow type="inline_number">
+            <field name="value">0</field>
+          </shadow>
+        </value>
+        <value name="value_2">
+          <shadow type="inline_number">
+            <field name="value">0</field>
+          </shadow>
+        </value>
+        <value name="value_3">
+          <shadow type="inline_number">
+            <field name="value">0</field>
+          </shadow>
+        </value>
       </shadow>
     </value>
   </block>
