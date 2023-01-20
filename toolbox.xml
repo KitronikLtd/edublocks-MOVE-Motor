@@ -6,7 +6,7 @@
 
   <block type="move_motor_on">
     <value name="motor_speed">
-        <shadow type="move_motor_speed"></shadow>
+      <shadow type="move_motor_speed"></shadow>
     </value>
   </block>
 
@@ -14,7 +14,7 @@
 
   <block type="move_motor_position">
     <value name="servo_angle">
-        <shadow type="move_motor_servo_angle"></shadow>
+      <shadow type="move_motor_servo_angle"></shadow>
     </value>
   </block>
 
