@@ -19,49 +19,9 @@
   </block>
 
   <block type="move_motor_set_led">
-    <value name="parameters">
-      <shadow type="parameters">
-        <mutation color="#10b981" items="3" limit="3" minimum="1" inputType="number" />
-        <value name="input_1">
-          <shadow type="inline_number">
-            <field name="value">255</field>
-          </shadow>
-        </value>
-        <value name="input_2">
-          <shadow type="inline_number">
-            <field name="value">0</field>
-          </shadow>
-        </value>
-        <value name="input_3">
-          <shadow type="inline_number">
-            <field name="value">128</field>
-          </shadow>
-        </value>
-      </shadow>
-    </value>
   </block>
  
   <block type="move_motor_set_leds">
-    <value name="parameters">
-      <shadow type="parameters">
-        <mutation color="#10b981" items="3" limit="3" minimum="1" inputType="number" />
-        <value name="input_1">
-          <shadow type="inline_number">
-            <field name="value">255</field>
-          </shadow>
-        </value>
-        <value name="input_2">
-          <shadow type="inline_number">
-            <field name="value">0</field>
-          </shadow>
-        </value>
-        <value name="input_3">
-          <shadow type="inline_number">
-            <field name="value">128</field>
-          </shadow>
-        </value>
-      </shadow>
-    </value>
   </block>
 
   <block type="move_motor_show_leds"></block>
