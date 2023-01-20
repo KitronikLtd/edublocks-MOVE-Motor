@@ -31,7 +31,6 @@ Blockly.Python['move_motor_off'] = function(block) {
   return code;
 };
 
-
 Blockly.Python['move_motor_servo_angle'] = function(block) {
   var angle = block.getFieldValue('slider');
   var code = angle;
