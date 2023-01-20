@@ -61,7 +61,7 @@ Blockly.Python['move_motor_set_leds'] = function(block) {
   return code;
 };
 
-Blockly.Python['move_motor_set_leds'] = function(block) {
+Blockly.Python['move_motor_show_leds'] = function(block) {
   var buggy = Blockly.Python.variableDB_.getName(block.getFieldValue('buggy'), Blockly.Variables.NAME_TYPE);
   var code = buggy + '.showLEDs()\n';
   return code;
