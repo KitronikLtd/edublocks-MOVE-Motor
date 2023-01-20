@@ -48,15 +48,19 @@ Blockly.Python['move_motor_position'] = function(block) {
 Blockly.Python['move_motor_set_led'] = function(block) {
   var buggy = Blockly.Python.variableDB_.getName(block.getFieldValue('buggy'), Blockly.Variables.NAME_TYPE);
   var led_number = block.getFieldValue('led_number');
-  var parameters = Blockly.Python.valueToCode(block, 'parameters', 0);
-  var code = buggy + '.setLED(' + led_number + ', (' + parameters + '))\n';
+  var red_value = Blockly.Python.valueToCode(block, 'red_value', Blockly.Python.ORDER_ATOMIC);
+  var green_value = Blockly.Python.valueToCode(block, 'green_value', Blockly.Python.ORDER_ATOMIC);
+  var blue_value = Blockly.Python.valueToCode(block, 'blue_value', Blockly.Python.ORDER_ATOMIC);
+  var code = buggy + '.setLED(' + led_number + ', (' + red_value + ', ' + green_value + ', ' + blue_value + '))\n';
   return code;
 };
 
 Blockly.Python['move_motor_set_leds'] = function(block) {
   var buggy = Blockly.Python.variableDB_.getName(block.getFieldValue('buggy'), Blockly.Variables.NAME_TYPE);
-  var parameters = Blockly.Python.valueToCode(block, 'parameters', 0);
-  var code = buggy + '.setLEDs((' + parameters + '))\n';
+  var red_value = Blockly.Python.valueToCode(block, 'red_value', Blockly.Python.ORDER_ATOMIC);
+  var green_value = Blockly.Python.valueToCode(block, 'green_value', Blockly.Python.ORDER_ATOMIC);
+  var blue_value = Blockly.Python.valueToCode(block, 'blue_value', Blockly.Python.ORDER_ATOMIC);
+  var code = buggy + '.setLEDs((' + red_value + ', ' + green_value + ', ' + blue_value + '))\n';
   return code;
 };
 
