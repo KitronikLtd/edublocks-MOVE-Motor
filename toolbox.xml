@@ -20,36 +20,36 @@
 
   <block type="move_motor_set_led">
     <value name="red_value">
-      <shadow type="inline_number">
-        <field name="value">255</field>
+      <shadow type="textinline">
+        <field name="text">64</field>
       </shadow>
     </value>
     <value name="green_value">
-      <shadow type="inline_number">
-        <field name="value">128</field>
+      <shadow type="textinline">
+        <field name="text">64</field>
       </shadow>
     </value>
     <value name="blue_value">
-      <shadow type="inline_number">
-        <field name="value">0</field>
+      <shadow type="textinline">
+        <field name="text">64</field>
       </shadow>
     </value>
   </block>
  
   <block type="move_motor_set_leds">
     <value name="red_value">
-      <shadow type="inline_number">
-        <field name="value">255</field>
+      <shadow type="textinline">
+        <field name="text">64</field>
       </shadow>
     </value>
     <value name="green_value">
-      <shadow type="inline_number">
-        <field name="value">128</field>
+      <shadow type="textinline">
+        <field name="text">64</field>
       </shadow>
     </value>
     <value name="blue_value">
-      <shadow type="inline_number">
-        <field name="value">0</field>
+      <shadow type="textinline">
+        <field name="text">64</field>
       </shadow>
     </value>
   </block>
