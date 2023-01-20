@@ -41,7 +41,7 @@
     </value>
   </block>
  
- <block type="move_motor_set_leds">
+  <block type="move_motor_set_leds">
     <value name="parameters">
       <shadow type="parameters">
         <mutation color="#10b981" items="3" limit="3" minimum="1" inputType="number" />
