@@ -112,7 +112,15 @@ Blockly.Blocks['move_motor_set_led'] = {
         .appendField(".setLED(")
         .appendField(new Blockly.FieldDropdown([["0", "0"], ["1", "1"], ["2", "2"], ["3", "3"]]), "led_number")
         .appendField(", (");
-    this.appendValueInput("parameters")
+    this.appendValueInput("red_value")
+        .setCheck(null);
+    this.appendDummyInput()
+        .appendField(",");
+    this.appendValueInput("green_value")
+        .setCheck(null);
+    this.appendDummyInput()
+        .appendField(",");
+    this.appendValueInput("blue_value")
         .setCheck(null);
     this.appendDummyInput()
         .appendField("))");
@@ -129,7 +137,15 @@ Blockly.Blocks['move_motor_set_leds'] = {
     this.appendDummyInput()
         .appendField(new Blockly.FieldVariable("buggy"), "buggy")
         .appendField(".setLEDs((");
-    this.appendValueInput("parameters")
+    this.appendValueInput("red_value")
+        .setCheck(null);
+    this.appendDummyInput()
+        .appendField(",");
+    this.appendValueInput("green_value")
+        .setCheck(null);
+    this.appendDummyInput()
+        .appendField(",");
+    this.appendValueInput("blue_value")
         .setCheck(null);
     this.appendDummyInput()
         .appendField("))");
