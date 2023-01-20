@@ -20,14 +20,14 @@ Blockly.Python['move_motor_on'] = function(block) {
   var motor_side = block.getFieldValue('motor_side');
   var motor_direction = block.getFieldValue('motor_direction');
   var motor_speed = Blockly.Python.valueToCode(block, 'motor_speed', Blockly.Python.ORDER_ATOMIC);
-  var code = buggy + '.motorOn(' + motor_side + ', ' + motor_direction + ', ' + motor_speed + ')\n';
+  var code = buggy + '.motorOn("' + motor_side + '", "' + motor_direction + '", ' + motor_speed + ')\n';
   return code;
 };
 
 Blockly.Python['move_motor_off'] = function(block) {
   var buggy = Blockly.Python.variableDB_.getName(block.getFieldValue('buggy'), Blockly.Variables.NAME_TYPE);
   var motor_side = block.getFieldValue('motor_side');
-  var code = buggy + '.motorOff(' + motor_side + ')\n';
+  var code = buggy + '.motorOff("' + motor_side + '")\n';
   return code;
 };
 
